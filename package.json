@@ -1,7 +1,7 @@
 {
   "name": "auth-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "Twitter Hack project!",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -27,5 +27,16 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
-  }
+  },
+  "bin": {
+    "auth-example": "seeds.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnriqueBarba/tweet-hack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EnriqueBarba/tweet-hack/issues"
+  },
+  "homepage": "https://github.com/EnriqueBarba/tweet-hack#readme"
 }

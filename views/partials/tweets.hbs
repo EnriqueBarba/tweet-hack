@@ -1,0 +1,11 @@
+{{#each tweets as |t|}}
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">@{{t.user.username}}</h5>
+        <p class="card-text">{{t.body}}</p>
+        <img src="{{t.image}}" />
+    </div>
+</div>
+
+{{/each}}

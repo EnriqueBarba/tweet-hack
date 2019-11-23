@@ -2,6 +2,11 @@ const User = require('../models/user.model');
 const mongoose = require('mongoose');
 const mailer = require('../config/mailer.config');
 
+// module.exports.index = (req, res, next) => {
+//   User.find()
+//   res.render("users/index",{})
+// }
+
 module.exports.new = (_, res) => {
   res.render('users/new', { user: new User() })
 }
@@ -13,7 +18,7 @@ module.exports.create = (req, res, next) => {
     email: req.body.email,
     password: req.body.password,
     avatar: req.body.avatar,
-    bootcamp: req.body.bootcamp
+    bio: req.body.bio
   })
 
   user.save()
@@ -60,7 +65,30 @@ module.exports.login = (_, res) => {
 }
 
 module.exports.doLogin = (req, res, next) => {
-  res.send('TODO')
+  // res.send('TODO')
+  const {email, password} = req.body
+  if (email && password)  {
+    User.findOne({ email, validated: true })
+    .then(user => {
+      if (user) {
+        user.checkPassword(password)
+        .then(match => {
+          if (match) {
+            req.session.user = user
+            res.redirect('/')
+          } else {
+            req.session.genericError = "wrong credentials"
+            res.redirect('/login')
+          }
+        })
+      }
+    })
+    .catch(next)
+  } else {
+    req.session.genericError = "wrong credentials"
+    res.redirect('/login')
+  }
+
 }
 
 module.exports.logout = (req, res) => {

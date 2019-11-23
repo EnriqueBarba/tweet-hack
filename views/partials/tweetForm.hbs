@@ -1,0 +1,28 @@
+<form action="/tweets" method="POST">
+  <div class="form-group">
+    <label for="body">Tweet</label>
+    <textarea name="body"  class="form-control {{#if error.name }}is-invalid{{/if}}" id="body"></textarea>
+
+    {{#if error.body}}
+    <div class="invalid-feedback">
+      {{error.body.message}}
+    </div>
+    {{/if}}
+  </div>
+
+  <div class="form-group">
+    <label for="image">Image</label>
+    <input name="image" type="text" class="form-control {{#if error.image }}is-invalid{{/if}}" id="image"
+      placeholder="Enter image">
+  
+    {{#if error.username}}
+    <div class="invalid-feedback">
+      {{error.username.message}}
+    </div>
+    {{/if}}
+  </div>
+
+  <button type="submit" class="btn btn-primary">
+    Tuiteame esta
+  </button>
+</form>

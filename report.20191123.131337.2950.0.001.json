@@ -1,0 +1,548 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191123.131337.2950.0.001.json",
+    "dumpEventTime": "2019-11-23T13:13:37Z",
+    "dumpEventTimeStamp": "1574511217980",
+    "processId": 2950,
+    "cwd": "/home/xardas/Desktop/ejercicios/tweet-hack",
+    "commandLine": [
+      "node",
+      "./bin/seeds"
+    ],
+    "nodejsVersion": "v12.12.0",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.12.0",
+      "v8": "7.7.299.13-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.12.0/node-v12.12.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.12.0/node-v12.12.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.4.0-18362-Microsoft",
+    "osVersion": "#476-Microsoft Fri Nov 01 16:53:00 PST 2019",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 2328100,
+        "nice": 0,
+        "sys": 12487500,
+        "idle": 102092900,
+        "irq": 1125600
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 1462900,
+        "nice": 0,
+        "sys": 3912900,
+        "idle": 111532600,
+        "irq": 104800
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 3680100,
+        "nice": 0,
+        "sys": 5278200,
+        "idle": 107950100,
+        "irq": 33900
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 1677900,
+        "nice": 0,
+        "sys": 10992600,
+        "idle": 104237900,
+        "irq": 110700
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 3304800,
+        "nice": 0,
+        "sys": 7268400,
+        "idle": 106335300,
+        "irq": 97000
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 1655700,
+        "nice": 0,
+        "sys": 2633200,
+        "idle": 112619200,
+        "irq": 34800
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 3182900,
+        "nice": 0,
+        "sys": 4657800,
+        "idle": 109067800,
+        "irq": 41800
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 2391000,
+        "nice": 0,
+        "sys": 5553100,
+        "idle": 108964000,
+        "irq": 19200
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wifi0",
+        "internal": false,
+        "mac": "d4:25:8b:d3:56:c1",
+        "address": "10.0.0.153",
+        "netmask": "255.255.248.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wifi0",
+        "internal": false,
+        "mac": "d4:25:8b:d3:56:c1",
+        "address": "fe80::38bd:e435:2962:99dc",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 17
+      }
+    ],
+    "host": "Kike-Pavilion"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b02675",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [node]"
+    },
+    {
+      "pc": "0x00000000009d9fa3",
+      "symbol": "node::OnFatalError(char const*, char const*) [node]"
+    },
+    {
+      "pc": "0x0000000000b37c3e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000b37fb9",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000ce3375",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000ce3a06",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [node]"
+    },
+    {
+      "pc": "0x0000000000cef89a",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000cf07a5",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000cf31b8",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [node]"
+    },
+    {
+      "pc": "0x0000000000cb9ae7",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [node]"
+    },
+    {
+      "pc": "0x0000000000fefa1b",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x0000000001372459",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2166681600,
+    "totalCommittedMemory": 2158155136,
+    "usedMemory": 1862859184,
+    "availableMemory": 100036344,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32568,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 26218528,
+        "capacity": 16759808,
+        "used": 3778008,
+        "available": 12981800
+      },
+      "old_space": {
+        "memorySize": 2120069120,
+        "committedMemory": 2119148072,
+        "capacity": 1885700200,
+        "used": 1846768736,
+        "available": 38931464
+      },
+      "code_space": {
+        "memorySize": 1474560,
+        "committedMemory": 1434784,
+        "capacity": 1246944,
+        "used": 1246944,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 790528,
+        "committedMemory": 790368,
+        "capacity": 601760,
+        "used": 601760,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 10481664,
+        "committedMemory": 10481664,
+        "capacity": 10427888,
+        "used": 10427888,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759808,
+        "used": 0,
+        "available": 16759808
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 184.594,
+    "kernelCpuSeconds": 19.2969,
+    "cpuConsumptionPercent": 172.789,
+    "maxRss": 2417172480,
+    "pageFaults": {
+      "IORequired": 0,
+      "IONotRequired": 845940
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 102.094,
+    "kernelCpuSeconds": 12.7188,
+    "cpuConsumptionPercent": 97.2987,
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_ham_it_up": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_sign_git_tag": "",
+    "USER": "xardas",
+    "npm_package_bin_auth_example": "seeds.js",
+    "npm_config_user_agent": "npm/6.11.3 node/v12.12.0 linux x64",
+    "npm_config_always_auth": "",
+    "npm_package_bugs_url": "https://github.com/EnriqueBarba/tweet-hack/issues",
+    "npm_config_bin_links": "true",
+    "npm_config_key": "",
+    "npm_package_devDependencies_nodemon": "^1.19.4",
+    "npm_config_allow_same_version": "",
+    "npm_config_description": "true",
+    "npm_config_fetch_retries": "2",
+    "npm_config_heading": "npm",
+    "npm_config_if_present": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_user": "1000",
+    "npm_node_execpath": "/home/xardas/.nvm/versions/node/v12.12.0/bin/node",
+    "SHLVL": "1",
+    "npm_config_prefer_online": "",
+    "npm_config_noproxy": "",
+    "HOME": "/home/xardas",
+    "OLDPWD": "/home/xardas/Desktop/ejercicios",
+    "LESS": "-R",
+    "npm_config_force": "",
+    "NVM_BIN": "/home/xardas/.nvm/versions/node/v12.12.0/bin",
+    "npm_config_only": "",
+    "npm_config_read_only": "",
+    "ZSH": "/home/xardas/.oh-my-zsh",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "npm_config_cache_min": "10",
+    "npm_config_init_license": "ISC",
+    "PAGER": "less",
+    "npm_config_editor": "vi",
+    "npm_config_rollback": "true",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_timing": "",
+    "npm_config_userconfig": "/home/xardas/.npmrc",
+    "npm_package_dependencies_dotenv": "^8.2.0",
+    "npm_config_engine_strict": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_preid": "",
+    "npm_config_tmp": "/tmp",
+    "WSL_DISTRO_NAME": "Ubuntu-18.04",
+    "npm_package_description": "Twitter Hack project!",
+    "npm_config_depth": "Infinity",
+    "npm_config_package_lock_only": "",
+    "npm_config_save_dev": "",
+    "npm_config_usage": "",
+    "NVM_DIR": "/home/xardas/.nvm",
+    "npm_package_homepage": "https://github.com/EnriqueBarba/tweet-hack#readme",
+    "npm_package_readmeFilename": "README.md",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_cafile": "",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_progress": "true",
+    "npm_config_https_proxy": "",
+    "npm_config_save_prod": "",
+    "npm_package_scripts_dev": "nodemon -e hbs,js,css app.js",
+    "npm_config_audit": "true",
+    "npm_config_cidr": "",
+    "npm_config_onload_script": "",
+    "npm_config_sso_type": "oauth",
+    "LOGNAME": "xardas",
+    "npm_package_dependencies_bcrypt": "^3.0.7",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_shell": "/usr/bin/zsh",
+    "NAME": "Kike-Pavilion",
+    "_": "/home/xardas/.nvm/versions/node/v12.12.0/bin/npm",
+    "npm_package_dependencies_express": "^4.17.1",
+    "npm_config_dry_run": "",
+    "npm_config_prefix": "/home/xardas/.nvm/versions/node/v12.12.0",
+    "npm_config_scope": "",
+    "npm_config_browser": "",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_save_optional": "",
+    "npm_config_searchopts": "",
+    "npm_config_versions": "",
+    "TERM": "xterm-256color",
+    "npm_config_cache": "/home/xardas/.npm",
+    "npm_config_proxy": "",
+    "npm_config_send_metrics": "",
+    "npm_package_scripts_start": "node app.js",
+    "npm_config_global_style": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_version": "",
+    "npm_config_local_address": "",
+    "npm_config_viewer": "man",
+    "npm_config_node_gyp": "/home/xardas/.nvm/versions/node/v12.12.0/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "PATH": "/home/xardas/.nvm/versions/node/v12.12.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/xardas/Desktop/ejercicios/tweet-hack/node_modules/.bin:/home/xardas/.nvm/versions/node/v12.12.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2019.522.0_x64__79rhkp1fndgsc:/mnt/c/oraclexe/app/oracle/product/11.2.0/server/bin:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Intel/iCLS Client/:/mnt/c/Program Files/Intel/iCLS Client/:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/ebae1/myRepos/Maven/apache-maven-3.6.0/bin:/mnt/c/Program Files/Java/jdk1.8.0_181/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/nodejs/:/%SystemRoot%/system32:/%SystemRoot%:/%SystemRoot%/System32/Wbem:/%SYSTEMROOT%/System32/WindowsPowerShell/v1.0/:/%SYSTEMROOT%/System32/OpenSSH/:/mnt/c/Users/ebae1/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ebae1/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/ebae1/AppData/Roaming/npm",
+    "npm_package_name": "auth-example",
+    "npm_package_dependencies_http_errors": "^1.7.3",
+    "npm_package_dependencies_nodemailer": "4.7.0",
+    "npm_package_repository_type": "git",
+    "npm_config_audit_level": "low",
+    "npm_config_prefer_offline": "",
+    "NODE": "/home/xardas/.nvm/versions/node/v12.12.0/bin/node",
+    "npm_config_color": "true",
+    "npm_config_sign_git_commit": "",
+    "npm_package_dependencies_hbs": "^4.0.6",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_maxsockets": "50",
+    "npm_config_offline": "",
+    "npm_config_sso_poll_frequency": "500",
+    "LANG": "C.UTF-8",
+    "npm_config_umask": "0000",
+    "LS_COLORS": "no=00:fi=00:di=34:ow=34;40:ln=35:pi=30;44:so=35;44:do=35;44:bd=33;44:cd=37;44:or=05;37;41:mi=05;37;41:ex=01;31:*.cmd=01;31:*.exe=01;31:*.com=01;31:*.bat=01;31:*.reg=01;31:*.app=01;31:*.txt=32:*.org=32:*.md=32:*.mkd=32:*.h=32:*.hpp=32:*.c=32:*.C=32:*.cc=32:*.cpp=32:*.cxx=32:*.objc=32:*.cl=32:*.sh=32:*.bash=32:*.csh=32:*.zsh=32:*.el=32:*.vim=32:*.java=32:*.pl=32:*.pm=32:*.py=32:*.rb=32:*.hs=32:*.php=32:*.htm=32:*.html=32:*.shtml=32:*.erb=32:*.haml=32:*.xml=32:*.rdf=32:*.css=32:*.sass=32:*.scss=32:*.less=32:*.js=32:*.coffee=32:*.man=32:*.0=32:*.1=32:*.2=32:*.3=32:*.4=32:*.5=32:*.6=32:*.7=32:*.8=32:*.9=32:*.l=32:*.n=32:*.p=32:*.pod=32:*.tex=32:*.go=32:*.sql=32:*.csv=32:*.sv=32:*.svh=32:*.v=32:*.vh=32:*.vhd=32:*.bmp=33:*.cgm=33:*.dl=33:*.dvi=33:*.emf=33:*.eps=33:*.gif=33:*.jpeg=33:*.jpg=33:*.JPG=33:*.mng=33:*.pbm=33:*.pcx=33:*.pdf=33:*.pgm=33:*.png=33:*.PNG=33:*.ppm=33:*.pps=33:*.ppsx=33:*.ps=33:*.svg=33:*.svgz=33:*.tga=33:*.tif=33:*.tiff=33:*.xbm=33:*.xcf=33:*.xpm=33:*.xwd=33:*.xwd=33:*.yuv=33:*.aac=33:*.au=33:*.flac=33:*.m4a=33:*.mid=33:*.midi=33:*.mka=33:*.mp3=33:*.mpa=33:*.mpeg=33:*.mpg=33:*.ogg=33:*.opus=33:*.ra=33:*.wav=33:*.anx=33:*.asf=33:*.avi=33:*.axv=33:*.flc=33:*.fli=33:*.flv=33:*.gl=33:*.m2v=33:*.m4v=33:*.mkv=33:*.mov=33:*.MOV=33:*.mp4=33:*.mp4v=33:*.mpeg=33:*.mpg=33:*.nuv=33:*.ogm=33:*.ogv=33:*.ogx=33:*.qt=33:*.rm=33:*.rmvb=33:*.swf=33:*.vob=33:*.webm=33:*.wmv=33:*.doc=31:*.docx=31:*.rtf=31:*.odt=31:*.dot=31:*.dotx=31:*.ott=31:*.xls=31:*.xlsx=31:*.ods=31:*.ots=31:*.ppt=31:*.pptx=31:*.odp=31:*.otp=31:*.fla=31:*.psd=31:*.7z=1;35:*.apk=1;35:*.arj=1;35:*.bin=1;35:*.bz=1;35:*.bz2=1;35:*.cab=1;35:*.deb=1;35:*.dmg=1;35:*.gem=1;35:*.gz=1;35:*.iso=1;35:*.jar=1;35:*.msi=1;35:*.rar=1;35:*.rpm=1;35:*.tar=1;35:*.tbz=1;35:*.tbz2=1;35:*.tgz=1;35:*.tx=1;35:*.war=1;35:*.xpi=1;35:*.xz=1;35:*.z=1;35:*.Z=1;35:*.zip=1;35:*.ANSI-30-black=30:*.ANSI-01;30-brblack=01;30:*.ANSI-31-red=31:*.ANSI-01;31-brred=01;31:*.ANSI-32-green=32:*.ANSI-01;32-brgreen=01;32:*.ANSI-33-yellow=33:*.ANSI-01;33-bryellow=01;33:*.ANSI-34-blue=34:*.ANSI-01;34-brblue=01;34:*.ANSI-35-magenta=35:*.ANSI-01;35-brmagenta=01;35:*.ANSI-36-cyan=36:*.ANSI-01;36-brcyan=01;36:*.ANSI-37-white=37:*.ANSI-01;37-brwhite=01;37:*.log=01;32:*~=01;32:*#=01;32:*.bak=01;33:*.BAK=01;33:*.old=01;33:*.OLD=01;33:*.org_archive=01;33:*.off=01;33:*.OFF=01;33:*.dist=01;33:*.DIST=01;33:*.orig=01;33:*.ORIG=01;33:*.swp=01;33:*.swo=01;33:*,v=01;33:*.gpg=34:*.gpg=34:*.pgp=34:*.asc=34:*.3des=34:*.aes=34:*.enc=34:*.sqlite=34:",
+    "npm_package_main": "app.js",
+    "npm_package_dependencies_express_session": "^1.17.0",
+    "npm_package_gitHead": "b254d74a62185246a6ccae8c78fcd0839c3e96c1",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_config_loglevel": "notice",
+    "npm_config_logs_max": "10",
+    "npm_config_message": "%s",
+    "npm_lifecycle_script": "node ./bin/seeds",
+    "npm_config_ca": "",
+    "npm_config_cert": "",
+    "npm_config_global": "",
+    "npm_config_link": "",
+    "SHELL": "/usr/bin/zsh",
+    "npm_package_version": "1.0.0",
+    "npm_package_repository_url": "git+https://github.com/EnriqueBarba/tweet-hack.git",
+    "npm_config_access": "",
+    "npm_config_also": "",
+    "npm_config_save": "true",
+    "npm_config_unicode": "true",
+    "npm_lifecycle_event": "seeds",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"seeds\"],\"original\":[\"run\",\"seeds\"]}",
+    "npm_config_before": "",
+    "npm_config_long": "",
+    "npm_config_production": "",
+    "npm_config_searchlimit": "20",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_update_notifier": "true",
+    "npm_package_author": "",
+    "npm_config_auth_type": "legacy",
+    "npm_config_node_version": "12.12.0",
+    "npm_config_tag": "latest",
+    "npm_package_dependencies_debug": "^4.1.1",
+    "npm_config_git_tag_version": "true",
+    "npm_config_commit_hooks": "true",
+    "npm_config_script_shell": "",
+    "npm_config_shrinkwrap": "true",
+    "npm_package_license": "ISC",
+    "npm_package_dependencies_mongoose": "^5.7.7",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_save_exact": "",
+    "npm_config_strict_ssl": "true",
+    "npm_package_scripts_seeds": "node ./bin/seeds",
+    "npm_package_dependencies_faker": "^4.1.0",
+    "npm_config_dev": "",
+    "npm_config_globalconfig": "/home/xardas/.nvm/versions/node/v12.12.0/etc/npmrc",
+    "npm_config_init_module": "/home/xardas/.npm-init.js",
+    "npm_config_parseable": "",
+    "PWD": "/home/xardas/Desktop/ejercicios/tweet-hack",
+    "npm_config_globalignorefile": "/home/xardas/.nvm/versions/node/v12.12.0/etc/npmignore",
+    "npm_execpath": "/home/xardas/.nvm/versions/node/v12.12.0/lib/node_modules/npm/bin/npm-cli.js",
+    "NVM_CD_FLAGS": "-q",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_searchstaleness": "900",
+    "npm_package_dependencies_cookie_parser": "^1.4.4",
+    "npm_config_node_options": "",
+    "npm_config_save_prefix": "^",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_group": "1000",
+    "npm_config_init_author_email": "",
+    "npm_config_searchexclude": "",
+    "HOSTTYPE": "x86_64",
+    "npm_config_git": "git",
+    "npm_config_optional": "true",
+    "WSLENV": "",
+    "npm_package_dependencies_connect_mongo": "^3.1.2",
+    "npm_package_dependencies_morgan": "^1.9.1",
+    "npm_config_json": "",
+    "INIT_CWD": "/home/xardas/Desktop/ejercicios/tweet-hack"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 65536,
+      "hard": 65536
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 8388608
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 7823,
+      "hard": 7823
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/lib/x86_64-linux-gnu/libnss_files.so.2",
+    "/lib/x86_64-linux-gnu/libnss_dns.so.2",
+    "/lib/x86_64-linux-gnu/libresolv.so.2",
+    "/home/xardas/Desktop/ejercicios/tweet-hack/node_modules/bcrypt/lib/binding/bcrypt_lib.node"
+  ]
+}
